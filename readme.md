@@ -3,7 +3,7 @@
 A tool that crawls Google's first page for any keyword, extracts entities from each article, and saves the results to Google Sheets and Supabase.
 
 ## Live Demo
-🔗 [Vercel URL](https://your-app.vercel.app)
+🔗 [Vercel URL](https://seo-analyzer-ndkdidkhf-osiris181s-projects.vercel.app/docs)
 
 ## Login
 | Field | Value |
