@@ -18,6 +18,7 @@ A tool that crawls Google's first page for any keyword, extracts entities from e
 ```
 /analyze?keyword=4G吃到飽
 ```
+4. Or just straight up click analyze, Try it out, and then input the keyword 4G吃到飽
 
 ## What it Does
 - Crawls Google top 10 results for any keyword using SerpAPI
