@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 import os
+import cloudscraper
 
 load_dotenv()
 SERPAPI_KEY = os.getenv("SERPAPI_KEY")
@@ -30,7 +31,9 @@ def get_serp_results(keyword: str):
 
 def get_article_text(url: str):
     """Scrape plain text from an article URL"""
+    scraper = cloudscraper.create_scraper()
     try:
+        response = scraper.get(url, timeout=15)
         headers = {"User-Agent": "Mozilla/5.0"}
         res = requests.get(url, timeout=10, headers=headers)
         soup = BeautifulSoup(res.text, "html.parser")
