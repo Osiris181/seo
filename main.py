@@ -33,6 +33,7 @@ async def analyze(
     for r in results:
         text = get_article_text(r["link"])
         entities = extract_entities(text)
+        r["entities"] = entities
         r["entity_count"] = count_entities(entities)
         r["entity_clusters"] = cluster_entities_by_label(entities)
 
